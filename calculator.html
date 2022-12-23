@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4">CASIO Mini &reg;</th>
+        </tr>
+        <tr>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text" id="input"></td>
+        </tr>
+        <tr>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+        </tr>
+        
+        <tr>
+            <td><input type="button" value="(" onclick="keys('(')" class="operand"></td>
+            <td><input type="button" value=")" onclick="keys(')')" class="operand"></td>
+            <td><input type="button" value="Del" onclick="deleteExp()" class="delete"></td>
+            <td><input type="button" value="C" onclick="clearScreen()" class="clearScreen"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="keys('1')"></td>
+            <td><input type="button" value="2" onclick="keys('2')"></td>
+            <td><input type="button" value="3" onclick="keys('3')"></td>
+            <td><input type="button" value="+" onclick="keys('+')" class="operators"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="keys('4')"></td>
+            <td><input type="button" value="5" onclick="keys('5')"></td>
+            <td><input type="button" value="6" onclick="keys('6')"></td>
+            <td><input type="button" value="-" onclick="keys('-')" class="operators"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="keys('7')"></td>
+            <td><input type="button" value="8" onclick="keys('8')"></td>
+            <td><input type="button" value="9" onclick="keys('9')"></td>
+            <td><input type="button" value="*" onclick="keys('*')" class="operators"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." onclick="keys('.')" class="fullstop"></td>
+            <td><input type="button" value="0" onclick="keys('0')"></td>
+            <td><input type="button" value="=" onclick="evalExp()" class="equalto"></td>
+            <td><input type="button" value="/" onclick="keys('/')" class="operators"></td>
+        </tr>
+        
+    </table>
+
+
+
+
+    <script src="calculator.js"></script>
+</body>
+</html>
